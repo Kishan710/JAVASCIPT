@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+<h1>hello</h1>
+    <p>Count: <span id="count"></span></p>
+    <button id="btn">Increment</button>
+    <button id="btn1">Decrement</button>
+
+    <script>
+      let count = document.querySelector("#count");
+      let btn = document.querySelector("#btn");
+      let btnn = document.querySelector("#btn1");
+      let value = parseInt(localStorage.getItem("countData") || 0);
+
+      
+      showCount();
+
+    
+      btn.addEventListener("click", () => {
+        value++;
+        localStorage.setItem("countData", value);
+        showCount();
+      });
+
+      
+      btnn.addEventListener("click", () => {
+        value--;
+        localStorage.setItem("countData", value);
+        showCount();
+      });
+
+      
+      function showCount() {
+        count.innerText = value;
+      }
+    </script>
+  </body>
+</html>

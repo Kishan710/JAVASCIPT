@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="count"></h1>
+
+    <button id="btn">Stop</button>
+    <button id="start">Start</button>
+    <button id="reset">Reset</button>
+
+    <p id="timer"></p>
+
+    <script>
+      let count = document.querySelector("#count");
+      let btn = document.querySelector("#btn");
+      let start = document.querySelector("#start");
+      let number = 1;
+      let reset = document.querySelector("#reset");
+      let timer = document.querySelector("#timer");
+      let id = setInterval(() => {
+        count.innerText = number;
+        number++;
+      }, 1000);
+
+      start.addEventListener("click", () => {
+        id = setInterval(() => {
+          count.innerText = number;
+          number++;
+        }, 1000);
+      });
+      btn.addEventListener("click", () => {
+        clearInterval(id);
+      });
+
+      reset.addEventListener("click", () => {
+        number = 1
+      });
+      let time = new Date();
+ 
+
+    </script>
+  </body>
+</html>

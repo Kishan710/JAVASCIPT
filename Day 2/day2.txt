@@ -1,0 +1,29 @@
+js datatypes
+
+primitive data type
+
+string = "hello" , 'hello' , `hello`
+number = 24
+boolean = true false
+bigint - store big numbers
+undefined
+null
+
+
+non primitive data type
+
+object -
+
+let object = {
+	hero:"hulk",
+	age:12,
+	power:1000
+}
+ // object creat key value pair
+
+
+array -
+
+
+
+function -

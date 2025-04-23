@@ -1,0 +1,19 @@
+h1{
+    background-color: pink;
+}
+
+#btn{
+    color: green;
+    background-color: red;
+    font-style: italic;
+    
+}
+
+#btn1{
+    color: red;
+    background-color: green;
+}
+
+p{
+    background-color: aqua;
+}
