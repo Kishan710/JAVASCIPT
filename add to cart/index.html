@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toys Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Toy Store</h1>
+  </header>
+
+  <main>
+    <section class="products">
+      
+      <div class="product">
+        <img src="./1.jpeg" alt="Teddy Bear">
+        <h3>Teddy Bear</h3>
+        <p>Soft, cuddly bear. Perfect for hugs and bedtime snuggles.</p>
+        <p class="price">$10</p>
+        <button onclick="addToCart('Teddy Bear', 10,)">Add to Cart</button>
+      </div>
+
+    
+      <div class="product">
+        <img src="./2.jpeg" alt="Rubber Duck">
+        <h3>Rubber Duck</h3>
+        <p>Classic bath toy. Squeaky and fun for all ages.</p>
+        <p class="price">$5</p>
+        <button onclick="addToCart('Rubber Duck', 5, '')">Add to Cart</button>
+      </div>
+
+
+      <div class="product">
+        <img src="./3.jpeg" alt="Robot">
+        <h3>Robot</h3>
+        <p>Walks and talks! Great for STEM learning.</p>
+        <p class="price">$25</p>
+        <button onclick="addToCart('Robot', 25, '')">Add to Cart</button>
+      </div>
+
+
+      <div class="product">
+        <img src ="./4.jpeg" alt="Lego Set">
+        <h3>Lego Set</h3>
+        <p>Build anything! Sparks creativity and engineering fun.</p>
+        <p class="price">$40</p>
+        <button onclick="addToCart('Lego Set', 40, '')">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQl4ODqjeN_p7DRIsloGBHda37NRVmFaRtzg&s" alt="Doll">
+        <h3>Doll</h3>
+        <p>Beautifully dressed. Great for storytelling and roleplay.</p>
+        <p class="price">$15</p>
+        <button onclick="addToCart('Doll', 15, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQl4ODqjeN_p7DRIsloGBHda37NRVmFaRtzg&s')">Add to Cart</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product">
+        <img src="./6.jpeg" alt="Train Set">
+        <h3>Train Set</h3>
+        <p>Classic wooden track and train for endless fun.</p>
+        <p class="price">$30</p>
+        <button onclick="addToCart('Train Set', 30, '')">Add to Cart</button>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product">
+        <img src="./7.jpeg" alt="Action Figure">
+        <h3>Action Figure</h3>
+        <p>Poseable hero figure ready for any adventure.</p>
+        <p class="price">$20</p>
+        <button onclick="addToCart('Action Figure', 20, '')">Add to Cart</button>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1niVUu3h8Ff0-YvuZ1BJZMOLlVoYTNpVRQ&s" alt="Building Blocks">
+        <h3>Building Blocks</h3>
+        <p>Colorful, stackable blocks for early development.</p>
+        <p class="price">$12</p>
+        <button onclick="addToCart('Building Blocks', 12, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb1niVUu3h8Ff0-YvuZ1BJZMOLlVoYTNpVRQ&s')">Add to Cart</button>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product">
+        <img src="./9.jpeg" alt="Remote Car">
+        <h3>Remote Car</h3>
+        <p>Fast, fun and fully remote-controlled toy car.</p>
+        <p class="price">$35</p>
+        <button onclick="addToCart('Remote Car', 35, '')">Add to Cart</button>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product">
+        <img src="./10.jpeg" alt="Yo-Yo">
+        <h3>Yo-Yo</h3>
+        <p>Classic toy. Master tricks and amaze your friends.</p>
+        <p class="price">$8</p>
+        <button onclick="addToCart('Yo-Yo', 8, '')">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-list"></ul>
+      <p>Total: $<span id="total">0</span></p>
+      <button id="checkout-btn" onclick="checkout()">Checkout</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
