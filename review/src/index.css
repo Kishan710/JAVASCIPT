@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form{
+  /* margin-top: 20px; */
+  margin-left: 20px;
+} 
+.add{
+  margin-top: 23px;
+}
+#main{
+  
+  margin-top: 40px;
+  margin-left: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#input{
+  padding-left: 10px;
+}
+.padding{
+  padding-left: 10px;
+}
+#button{
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+.update{
+  margin-top: 30px;
+
+}
+.input{
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.input1{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button1{
+  margin-top: 40px;
+}
+.button2{
+  margin-top: 30px;
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.subtotal{
+    padding-left: 65px;
+}
+.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
